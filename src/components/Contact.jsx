@@ -1,7 +1,6 @@
 import React from 'react';
-
+import SEO from '../components/SEO';
 const Contact = () => {
-    const address = "BFC Bengaluru Fitness Club · Tatanagar, Devinagar, Bengaluru, Karnataka 560092";
     const mapLink = "https://maps.app.goo.gl/9UrpCRn1fRKuaB1v7";
     const whatsappNumber = "918050022645"; // Placeholder
 
