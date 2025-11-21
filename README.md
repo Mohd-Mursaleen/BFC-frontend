@@ -50,12 +50,6 @@ A premium, high-performance website for **Bengaluru Fitness Connection**, design
     npm run build
     ```
 
-## 📦 Deployment
-
-This project is configured for easy deployment on **Netlify**.
-
-See [DEPLOYMENT_GUIDE.md](./DEPLOYMENT_GUIDE.md) for detailed instructions.
-
 ## 📂 Project Structure
 
 ```
