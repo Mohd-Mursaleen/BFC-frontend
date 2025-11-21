@@ -70,13 +70,6 @@ function Hero({allowReveal = true}) {
           </a>
         </div>
       </div>
-
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-20 animate-bounce">
-        <div className="w-[30px] h-[50px] rounded-full border-2 border-white/30 flex justify-center p-2">
-          <div className="w-1 h-3 bg-white/80 rounded-full animate-scroll-down"></div>
-        </div>
-      </div>
     </section>
   );
 }
