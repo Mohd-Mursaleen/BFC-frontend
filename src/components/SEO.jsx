@@ -1,11 +1,11 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 
-const SEO = ({ 
+  const SEO = ({ 
   title, 
   description, 
   keywords, 
-  canonicalUrl = 'https://bfc-gym.com',
+  canonicalUrl = 'https://www.bengalurufitnessclub.in',
   ogImage = '/src/assets/photo/logo.jpeg' 
 }) => {
   const siteTitle = 'BFC | Bengaluru Fitness Connection';
@@ -17,7 +17,7 @@ const SEO = ({
     "@type": "GymOrFitnessCenter",
     "name": "Bengaluru Fitness Connection",
     "image": [
-      "https://bfc-gym.com/src/assets/photo/logo.jpeg"
+      "https://www.bengalurufitnessclub.in/src/assets/photo/logo.jpeg"
     ],
     "address": {
       "@type": "PostalAddress",
@@ -32,7 +32,7 @@ const SEO = ({
       "latitude": 12.9716, // Update with real coords
       "longitude": 77.5946
     },
-    "url": "https://bfc-gym.com",
+    "url": "https://www.bengalurufitnessclub.in",
     "telephone": "+919876543210",
     "priceRange": "₹1500 - ₹10000",
     "openingHoursSpecification": [
