@@ -223,7 +223,7 @@ function MembershipPlans() {
                     </>
                   ) : (
                     <>
-                      <span className="block">Monthly Fee: {plan.price}</span>
+                      <span className="block">Gym Fee: {plan.price}</span>
                       <span className="block">Admission: {plan.admission}</span>
                     </>
                   )}
