@@ -27,7 +27,7 @@ function Home() {
             <GymAccessBanner />
             <ProductShowcase products={productShowcaseData} />
             <CommunityGallery />
-            <MembershipPlans />
+            <MembershipPlans disableSEO={true} />
             <ConnectSection />
         </>
     );
