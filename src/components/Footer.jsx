@@ -5,6 +5,7 @@ import {
   Smartphone, 
   Banknote,
   Instagram,
+  MessageCircle,
 } from 'lucide-react'
 
 
@@ -111,6 +112,22 @@ function Footer() {
                 <span className="text-xs uppercase tracking-wider">{method.label}</span>
               </div>
             ))}
+          </div>
+
+          {/* Developer Credit - Bottom Right */}
+          <div className="flex items-center gap-2 text-gray-500">
+            <p className="text-xs">
+              Developed and managed by: <span className="text-gray-400">Mohd Mursaleen</span>
+            </p>
+            <a
+              href="https://wa.me/918218134534"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-500 hover:text-green-500 transition-colors p-1.5 hover:bg-white/5 rounded-full"
+              title="Contact on WhatsApp"
+            >
+              <MessageCircle size={14} />
+            </a>
           </div>
         </div>
       </div>
