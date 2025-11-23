@@ -15,7 +15,7 @@ function Home() {
         <>
             <SEO 
                 title="Home"
-                description="Bengaluru Fitness Connection (BFC) - Premier gym in Bengaluru offering world-class equipment, personal training, and a supportive community. Join us today!"
+                description="Bengaluru Fitness Club (BFC) - Premier gym in Bengaluru offering world-class equipment, personal training, and a supportive community. Join us today!"
                 keywords="gym, fitness, bengaluru, personal training, workout, health, bodybuilding, cardio"
             />
             <div className="snap-start">

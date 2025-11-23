@@ -7,7 +7,7 @@ const PrivacyPolicy = () => {
     <div className="min-h-screen bg-black text-white pt-24 pb-12 px-4 sm:px-6 lg:px-8">
       <SEO 
         title="Privacy Policy"
-        description="Learn how Bengaluru Fitness Connection collects, uses, and protects your personal information. Your privacy is our priority."
+        description="Learn how Bengaluru Fitness Club collects, uses, and protects your personal information. Your privacy is our priority."
         keywords="privacy policy, data protection, gym privacy, bfc privacy"
       />
       <div className="max-w-4xl mx-auto">
@@ -24,7 +24,7 @@ const PrivacyPolicy = () => {
             <section>
               <h2 className="text-2xl font-bold text-white mb-4">1. Introduction</h2>
               <p>
-                Bengaluru Fitness Connection ("BFC") is committed to protecting your privacy. This Privacy Policy explains how we collect, 
+                Bengaluru Fitness Club ("BFC") is committed to protecting your privacy. This Privacy Policy explains how we collect, 
                 use, disclose, and safeguard your information when you visit our website, use our gym facilities, or communicate with us 
                 via WhatsApp.
               </p>

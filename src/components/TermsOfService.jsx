@@ -7,7 +7,7 @@ const TermsOfService = () => {
     <div className="min-h-screen bg-black text-white pt-24 pb-12 px-4 sm:px-6 lg:px-8">
       <SEO 
         title="Terms of Service"
-        description="Read the Terms of Service for Bengaluru Fitness Connection. Understand our membership rules, policies, and user agreements."
+        description="Read the Terms of Service for Bengaluru Fitness Club. Understand our membership rules, policies, and user agreements."
         keywords="terms of service, gym rules, membership agreement, bfc policies"
       />
       <div className="max-w-4xl mx-auto">
@@ -24,7 +24,7 @@ const TermsOfService = () => {
             <section>
               <h2 className="text-2xl font-bold text-white mb-4">1. Acceptance of Terms</h2>
               <p>
-                By accessing and using the services provided by Bengaluru Fitness Connection ("BFC", "we", "us", or "our"), 
+                By accessing and using the services provided by Bengaluru Fitness Club ("BFC", "we", "us", or "our"), 
                 including our website, gym facilities, and mobile communications, you agree to be bound by these Terms of Service. 
                 If you do not agree to these terms, please do not use our services.
               </p>

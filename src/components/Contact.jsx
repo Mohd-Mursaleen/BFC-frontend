@@ -8,7 +8,7 @@ const Contact = () => {
         <div className="w-full min-h-screen bg-[#FDFDFD] font-sans relative">
             <SEO 
                 title="Contact Us"
-                description="Get in touch with Bengaluru Fitness Connection. Visit our gym, call us, or chat on WhatsApp. We are here to help you start your fitness journey."
+                description="Get in touch with Bengaluru Fitness Club. Visit our gym, call us, or chat on WhatsApp. We are here to help you start your fitness journey."
                 keywords="contact gym, gym location, gym phone number, bfc contact"
             />
             {/* Dark Header Section for Navbar Visibility */}

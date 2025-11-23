@@ -48,7 +48,7 @@ function Hero({allowReveal = true}) {
         }`}
       >
         <h2 className="text-bfc-yellow font-display font-bold tracking-widest text-lg md:text-xl mb-4 uppercase">
-          Bengaluru Fitness Connection
+          Bengaluru Fitness Club
         </h2>
         
         <h1 className="font-display text-5xl sm:text-7xl md:text-8xl font-bold leading-none mb-6 text-white uppercase tracking-tight">

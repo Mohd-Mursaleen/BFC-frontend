@@ -8,14 +8,14 @@ import { Helmet } from 'react-helmet-async';
   canonicalUrl = 'https://www.bengalurufitnessclub.in',
   ogImage = '/src/assets/photo/logo.jpeg' 
 }) => {
-  const siteTitle = 'BFC | Bengaluru Fitness Connection';
+  const siteTitle = 'BFC | Bengaluru Fitness Club';
   const fullTitle = title ? `${title} | BFC` : siteTitle;
   
   // Structured Data for LocalBusiness
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "GymOrFitnessCenter",
-    "name": "Bengaluru Fitness Connection",
+    "name": "Bengaluru Fitness Club",
     "image": [
       "https://www.bengalurufitnessclub.in/src/assets/photo/logo.jpeg"
     ],

@@ -1,6 +1,6 @@
-# Bengaluru Fitness Connection (BFC) Website
+# Bengaluru Fitness Club (BFC) Website
 
-A premium, high-performance website for **Bengaluru Fitness Connection**, designed to showcase the gym's facilities, membership plans, and vibrant community.
+A premium, high-performance website for **Bengaluru Fitness Club**, designed to showcase the gym's facilities, membership plans, and vibrant community.
 
 ## 🚀 Features
 

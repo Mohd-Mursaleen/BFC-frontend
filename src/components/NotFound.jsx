@@ -8,7 +8,7 @@ const NotFound = () => {
     <div className="min-h-screen bg-black text-white flex items-center justify-center relative overflow-hidden px-4">
       <SEO 
         title="Page Not Found"
-        description="The page you are looking for does not exist. Return to Bengaluru Fitness Connection homepage."
+        description="The page you are looking for does not exist. Return to Bengaluru Fitness Club homepage."
       />
       
       {/* Background Elements */}
