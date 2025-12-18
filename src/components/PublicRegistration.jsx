@@ -13,6 +13,8 @@ const PublicRegistration = () => {
         address: '',
         medical_history: '',
         preferred_gym_slot: '',
+        emergency_contact_name: '',
+        emergency_contact_number: '',
         status: 'active'
     });
 
@@ -64,6 +66,8 @@ const PublicRegistration = () => {
                 address: '',
                 medical_history: '',
                 preferred_gym_slot: '',
+                emergency_contact_name: '',
+                emergency_contact_number: '',
                 status: 'active'
             });
 
@@ -174,6 +178,31 @@ const PublicRegistration = () => {
                                         <option value="female">Female</option>
                                         <option value="other">Other</option>
                                     </select>
+                                </div>
+                                <div className="md:col-span-2 border-t border-zinc-800 my-2"></div>
+                                <div>
+                                    <label className={labelClasses}>Emergency Contact Name *</label>
+                                    <input
+                                        type="text"
+                                        name="emergency_contact_name"
+                                        required
+                                        value={formData.emergency_contact_name}
+                                        onChange={handleChange}
+                                        className={inputClasses}
+                                        placeholder="Contact Person"
+                                    />
+                                </div>
+                                <div>
+                                    <label className={labelClasses}>Emergency Contact Number *</label>
+                                    <input
+                                        type="tel"
+                                        name="emergency_contact_number"
+                                        required
+                                        value={formData.emergency_contact_number}
+                                        onChange={handleChange}
+                                        className={inputClasses}
+                                        placeholder="Emergency Phone"
+                                    />
                                 </div>
                             </div>
                         </div>
