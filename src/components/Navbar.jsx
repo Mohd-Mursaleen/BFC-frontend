@@ -18,7 +18,8 @@ function throttle(func, wait) {
 const MENU_ITEMS = [
   { label: 'Plans', href: '/plans' },
   { label: 'Gallery', href: '/gallery' },
-  { label: 'Contact', href: '/contact' }
+  { label: 'Contact', href: '/contact' },
+  { label: 'Register', href: '/register' }
 ]
 
 function Navbar() {

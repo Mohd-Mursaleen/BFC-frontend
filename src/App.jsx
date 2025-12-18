@@ -12,11 +12,13 @@ import TopBanner from "./components/TopBanner";
 import TermsOfService from "./components/TermsOfService";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import NotFound from "./components/NotFound";
+import PublicRegistration from "./components/PublicRegistration";
 
 function App() {
   const location = useLocation();
   const isGalleryPage = location.pathname === '/gallery';
-  const isNotFoundPage = location.pathname === '/404' || !['/', '/plans', '/contact', '/gallery', '/terms', '/privacy'].includes(location.pathname);
+  const isNotFoundPage = location.pathname === '/404' || !['/', '/plans', '/contact', '/gallery', '/terms', '/privacy', '/register'].includes(location.pathname);
+  const isRegistrationPage = location.pathname === '/register';
 
   useEffect(() => {
     const lenis = new Lenis({
@@ -52,8 +54,8 @@ function App() {
         {/* Global Noise Overlay */}
         <div className="bg-noise-overlay"></div>
         
-        {!isGalleryPage && !isNotFoundPage && <TopBanner />}
-        <Navbar />
+        {!isGalleryPage && !isNotFoundPage && !isRegistrationPage && <TopBanner />}
+        {!isRegistrationPage && <Navbar />}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/plans" element={<MembershipPlans />} />
@@ -61,9 +63,10 @@ function App() {
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/terms" element={<TermsOfService />} />
           <Route path="/privacy" element={<PrivacyPolicy />} />
+          <Route path="/register" element={<PublicRegistration />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
-        {!isGalleryPage && !isNotFoundPage && <Footer />}
+        {!isGalleryPage && !isNotFoundPage && !isRegistrationPage && <Footer />}
       </div>
     </HelmetProvider>
   );
