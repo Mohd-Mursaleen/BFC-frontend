@@ -256,14 +256,21 @@ const PublicRegistration = () => {
                                 </div>
                                 <div>
                                     <label className={labelClasses}>Medical History (Optional)</label>
-                                    <textarea
+                                    <select
                                         name="medical_history"
                                         value={formData.medical_history}
                                         onChange={handleChange}
-                                        rows="3"
                                         className={inputClasses}
-                                        placeholder="Any medical conditions or injuries we should know about..."
-                                    ></textarea>
+                                    >
+                                        <option value="">No medical conditions</option>
+                                        <option value="Diabetic">Diabetic</option>
+                                        <option value="Thyroid">Thyroid</option>
+                                        <option value="Heart or Stroke Condition">Heart or Stroke Condition</option>
+                                        <option value="High Blood Pressure">High Blood Pressure</option>
+                                        <option value="Low Blood Pressure">Low Blood Pressure</option>
+                                        <option value="Breathing Difficulty / Asthma">Breathing Difficulty / Asthma</option>
+                                        <option value="Back Pain Problem">Back Pain Problem</option>
+                                    </select>
                                 </div>
                                 <div>
                                     <label className={labelClasses}>Preferred Gym Slot (Optional)</label>
@@ -274,9 +281,12 @@ const PublicRegistration = () => {
                                         className={inputClasses}
                                     >
                                         <option value="">No preference</option>
-                                        <option value="morning">Morning (6AM - 10AM)</option>
-                                        <option value="afternoon">Afternoon (12PM - 4PM)</option>
-                                        <option value="evening">Evening (4PM - 10PM)</option>
+                                        <option value="5:30am to 7:30am">5:30am to 7:30am</option>
+                                        <option value="7:30am to 9:30am">7:30am to 9:30am</option>
+                                        <option value="9:30am to 11:30am">9:30am to 11:30am</option>
+                                        <option value="4:00pm to 6:00pm">4:00pm to 6:00pm</option>
+                                        <option value="6:00pm to 8:00pm">6:00pm to 8:00pm</option>
+                                        <option value="8:00pm to 10:00pm">8:00pm to 10:00pm</option>
                                     </select>
                                 </div>
                             </div>
