@@ -38,6 +38,8 @@ const PublicRegistration = () => {
             const payload = {
                 ...formData,
                 date_of_birth: formData.date_of_birth || null,
+                emergency_contact_name: formData.emergency_contact_name || null,
+                emergency_contact_number: formData.emergency_contact_number || null,
                 height: formData.height ? parseFloat(formData.height) : null,
                 weight: formData.weight ? parseFloat(formData.weight) : null,
             };
@@ -176,11 +178,10 @@ const PublicRegistration = () => {
                                 </div>
                                 <div className="md:col-span-2 border-t border-zinc-800 my-2"></div>
                                 <div>
-                                    <label className={labelClasses}>Emergency Contact Name *</label>
+                                    <label className={labelClasses}>Emergency Contact Name (Optional)</label>
                                     <input
                                         type="text"
                                         name="emergency_contact_name"
-                                        required
                                         value={formData.emergency_contact_name}
                                         onChange={handleChange}
                                         className={inputClasses}
@@ -188,11 +189,10 @@ const PublicRegistration = () => {
                                     />
                                 </div>
                                 <div>
-                                    <label className={labelClasses}>Emergency Contact Number *</label>
+                                    <label className={labelClasses}>Emergency Contact Number (Optional)</label>
                                     <input
                                         type="tel"
                                         name="emergency_contact_number"
-                                        required
                                         value={formData.emergency_contact_number}
                                         onChange={handleChange}
                                         className={inputClasses}
