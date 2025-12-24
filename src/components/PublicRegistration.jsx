@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
+import { ArrowLeft } from 'lucide-react';
+import { toast } from 'sonner';
 
 const PublicRegistration = () => {
+    const navigate = useNavigate();
     const [formData, setFormData] = useState({
         full_name: '',
         email: '',
@@ -19,7 +23,6 @@ const PublicRegistration = () => {
     });
 
     const [isSubmitting, setIsSubmitting] = useState(false);
-    const [message, setMessage] = useState({ type: '', text: '' });
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -53,26 +56,15 @@ const PublicRegistration = () => {
                 throw new Error(errorData.detail || 'Registration failed');
             }
 
-            setMessage({ type: 'success', text: 'Registration successful! Welcome to the BFC family.' });
-            // content reset
-            setFormData({
-                full_name: '',
-                email: '',
-                phone: '',
-                date_of_birth: '',
-                gender: '',
-                height: '',
-                weight: '',
-                address: '',
-                medical_history: '',
-                preferred_gym_slot: '',
-                emergency_contact_name: '',
-                emergency_contact_number: '',
-                status: 'active'
-            });
+            toast.success('Registration successful! Welcome to the BFC family.');
+            
+            // Redirect after a short delay to allow toast to be seen
+            setTimeout(() => {
+                navigate('/');
+            }, 1500);
 
         } catch (error) {
-            setMessage({ type: 'error', text: error.message || 'Something went wrong. Please try again.' });
+            toast.error(error.message || 'Something went wrong. Please try again.');
         } finally {
             setIsSubmitting(false);
         }
@@ -91,6 +83,16 @@ const PublicRegistration = () => {
                 transition={{ duration: 0.6 }}
                 className="max-w-4xl mx-auto"
             >
+                <div className="mb-8">
+                    <button
+                        onClick={() => navigate('/')}
+                        className="flex items-center text-zinc-400 hover:text-[#F4C430] transition-colors group"
+                    >
+                        <ArrowLeft className="w-5 h-5 mr-2 transform group-hover:-translate-x-1 transition-transform" />
+                        Back to Home
+                    </button>
+                </div>
+
                 <div className="text-center mb-12">
                     <h1 className="text-4xl md:text-5xl font-black text-white mb-4">
                         Join <span className="text-[#F4C430]">BFC</span> Today
@@ -101,13 +103,7 @@ const PublicRegistration = () => {
                 </div>
 
                 <div className="bg-zinc-900/50 backdrop-blur-sm border border-zinc-800 rounded-2xl p-8 shadow-2xl">
-                    {message.text && (
-                        <div className={`mb-8 p-4 rounded-lg font-medium text-center ${
-                            message.type === 'success' ? 'bg-green-500/10 text-green-500 border border-green-500/20' : 'bg-red-500/10 text-red-500 border border-red-500/20'
-                        }`}>
-                            {message.text}
-                        </div>
-                    )}
+                    {/* Message block removed in favor of toast */}
 
                     <form onSubmit={handleSubmit} className="space-y-8">
                         {/* Section 1: Personal Info */}

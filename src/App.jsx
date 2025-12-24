@@ -13,6 +13,7 @@ import TermsOfService from "./components/TermsOfService";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import NotFound from "./components/NotFound";
 import PublicRegistration from "./components/PublicRegistration";
+import { Toaster } from 'sonner';
 
 function App() {
   const location = useLocation();
@@ -50,6 +51,7 @@ function App() {
 
   return (
     <HelmetProvider>
+      <Toaster position="top-center" richColors />
       <div className="min-h-screen bg-black text-white font-sans selection:bg-bfc-yellow selection:text-black">
         {/* Global Noise Overlay */}
         <div className="bg-noise-overlay"></div>
