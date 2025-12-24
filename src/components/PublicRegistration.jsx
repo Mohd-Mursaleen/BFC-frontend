@@ -37,6 +37,7 @@ const PublicRegistration = () => {
             // Convert types as needed by Pydantic
             const payload = {
                 ...formData,
+                date_of_birth: formData.date_of_birth || null,
                 height: formData.height ? parseFloat(formData.height) : null,
                 weight: formData.weight ? parseFloat(formData.weight) : null,
             };
@@ -148,11 +149,10 @@ const PublicRegistration = () => {
                                     />
                                 </div>
                                 <div>
-                                    <label className={labelClasses}>Date of Birth *</label>
+                                    <label className={labelClasses}>Date of Birth (Optional)</label>
                                     <input
                                         type="date"
                                         name="date_of_birth"
-                                        required
                                         value={formData.date_of_birth}
                                         onChange={handleChange}
                                         className={inputClasses}
