@@ -40,6 +40,7 @@ const PublicRegistration = () => {
                 date_of_birth: formData.date_of_birth || null,
                 emergency_contact_name: formData.emergency_contact_name || null,
                 emergency_contact_number: formData.emergency_contact_number || null,
+                medical_history: formData.medical_history || null,
                 height: formData.height ? parseFloat(formData.height) : null,
                 weight: formData.weight ? parseFloat(formData.weight) : null,
             };
