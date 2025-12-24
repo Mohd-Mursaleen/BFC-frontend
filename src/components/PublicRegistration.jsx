@@ -32,7 +32,6 @@ const PublicRegistration = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setIsSubmitting(true);
-        setMessage({ type: '', text: '' });
 
         try {
             // Convert types as needed by Pydantic
